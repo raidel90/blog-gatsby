@@ -19,8 +19,8 @@ export default ({ data }) => (
   <Layout>
     <SEO title="HOME" />
     <div>
-      <h1>Probando cosas</h1>
-      <h4>{data.allMarkdownRemark.totalCount}</h4>
+      <h1>Mi Blog - Raidel</h1>
+      <h4>{data.allMarkdownRemark.totalCount} Articulos</h4>
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <div key={node.id}>
           <BlogLink to={node.fields.slug}>
